@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RxDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXX-ed-sV7">
+                                <rect key="frame" x="20" y="144" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6kG-Tw-JEq">
+                                <rect key="frame" x="20" y="175" width="200" height="40"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1hz-lC-6iK"/>
+                                    <constraint firstAttribute="width" constant="200" id="ZhU-gS-kbt"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登陆密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNB-xR-2vk">
+                                <rect key="frame" x="20" y="255" width="69.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HgG-Xo-tqb">
+                                <rect key="frame" x="20" y="286" width="200" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="HbK-CW-Ufb"/>
+                                    <constraint firstAttribute="height" constant="40" id="KVy-kU-I0T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHS-9g-Dfj">
+                                <rect key="frame" x="107" y="428" width="200" height="40"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Jlf-8i-4ay"/>
+                                    <constraint firstAttribute="width" constant="200" id="YQe-gB-8rS"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="登陆"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HgG-Xo-tqb" firstAttribute="leading" secondItem="dNB-xR-2vk" secondAttribute="leading" id="5AJ-iw-6i5"/>
+                            <constraint firstItem="IHS-9g-Dfj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fh0-UU-xiu"/>
+                            <constraint firstItem="VXX-ed-sV7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="JSw-Tf-WwF"/>
+                            <constraint firstItem="6kG-Tw-JEq" firstAttribute="leading" secondItem="VXX-ed-sV7" secondAttribute="leading" id="RKC-4X-you"/>
+                            <constraint firstItem="6kG-Tw-JEq" firstAttribute="top" secondItem="VXX-ed-sV7" secondAttribute="bottom" constant="10" id="UPm-KG-tvX"/>
+                            <constraint firstItem="dNB-xR-2vk" firstAttribute="top" secondItem="6kG-Tw-JEq" secondAttribute="bottom" constant="40" id="a1m-e5-9VJ"/>
+                            <constraint firstItem="IHS-9g-Dfj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cKn-8E-ifZ"/>
+                            <constraint firstItem="dNB-xR-2vk" firstAttribute="leading" secondItem="VXX-ed-sV7" secondAttribute="leading" id="ltW-Uy-MSU"/>
+                            <constraint firstItem="VXX-ed-sV7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nIc-CQ-Oh2"/>
+                            <constraint firstItem="HgG-Xo-tqb" firstAttribute="top" secondItem="dNB-xR-2vk" secondAttribute="bottom" constant="10" id="wck-uV-dIa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginBtn" destination="IHS-9g-Dfj" id="SQA-FA-3Rl"/>
+                        <outlet property="loginLab" destination="dNB-xR-2vk" id="5Kd-H8-uf0"/>
+                        <outlet property="nameTextField" destination="6kG-Tw-JEq" id="RMU-Zc-aIi"/>
+                        <outlet property="pwdTextField" destination="HgG-Xo-tqb" id="Wlj-lQ-S3v"/>
+                        <outlet property="userNameLab" destination="VXX-ed-sV7" id="FiJ-Wj-rEM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
