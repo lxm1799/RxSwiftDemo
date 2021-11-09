@@ -18,6 +18,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        creatTextfiled()
+        creatButton()
+    }
+}
+
+
+extension ViewController{
+    
+    
+    ///demoTextfiled
+    func creatTextfiled() {
         let lab = UILabel.init(frame: .init(x:(view.frame.width - 100)/2, y: 50, width: 100, height: 30))
         lab.textColor = .black
         lab.backgroundColor = .blue
@@ -56,12 +67,28 @@ class ViewController: UIViewController {
         ///绑定到其他view上
         textfiled.rx.text.bind(to: lab.rx.text).disposed(by: disposeBag)
         textfiled.rx.attributedText.bind(to: lab1.rx.attributedText).disposed(by: disposeBag)
-
         view.addSubview(textfiled)
     }
-
-
     
+    
+    func creatButton() {
+        
+        let btn = UIButton.init(frame: .init(x: 0, y: 0, width: 100, height: 100))
+        btn.backgroundColor = .red
+        btn.center = view.center
+        var index = 0
+        
+        btn.rx.tap.subscribe { [weak self] in
+            index += 1
+            print("开始 = \(index)")
+        } onError: { error in
+            print("错误")
+        } onCompleted: {
+            print("结束")
+        } onDisposed: {
+            print("释放")
+        }
+        .disposed(by: disposeBag)
+        view.addSubview(btn)
+    }
 }
-
-
